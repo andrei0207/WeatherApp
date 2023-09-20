@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(2, 0, 36);
+  background: radial-gradient(
+    circle,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(16, 155, 227, 1) 0%,
+    rgba(0, 134, 255, 1) 100%
+  );
+}
+
+.w-wrapper {
+  width: 100%;
+  max-width: 500px;
+  height: 600px;
+  padding: 20px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.65);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(12.5px);
+  -webkit-backdrop-filter: blur(12.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.w-search {
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.w-search i {
+  font-size: 20px;
+  margin-right: 10px;
+}
+.w-search input {
+  padding: 20px 10px;
+  height: 20px;
+  font-size: 18px;
+}
+.w-search button {
+  font-size: 20px;
+  padding: 10px;
+  background-color: #4996aa;
+  color: white;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.w-details .w-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+.w-details h5,
+.w-details h3,
+.w-details p {
+  margin-bottom: 5px;
+}
+.w-details .flex p {
+  min-width: 160px;
+}
+
+.w-details h5 {
+  font-size: 30px;
+  color: red;
+  display: flex;
+}
+.w-details h5 span {
+  font-size: 16px;
+}
+.w-details h3 {
+  min-height: 37px;
+  font-size: 30px;
+  display: block;
+}
+
+.w-img-cont {
+  margin-bottom: 69px;
+  text-align: center;
+}
+figure {
+  min-height: 170px;
+}
+figure img {
+  transition: all 0.3s ease-in;
+  max-width: 200px;
+}
+figcaption {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 600;
+  min-height: 41px;
+}
+figcaption.subtitle {
+  font-weight: 400;
+  font-size: 16px;
+  color: #4b4949;
+  min-height: 21px;
+}
+
+.hidden {
+  display: none;
+}
+.w-details .flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+p i {
+  margin: 0 5px;
+  color: #4996aa;
+}
+

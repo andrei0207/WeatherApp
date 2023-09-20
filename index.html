@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1 class="hidden">Weather App</h1>
+    <div class="container">
+      <div class="w-wrapper">
+        <div class="w-img-cont">
+          <figure>
+            <img class="w-img" src="" alt="" />
+          </figure>
+          <figcaption class="w-name"></figcaption>
+          <figcaption class="w-desc subtitle"></figcaption>
+        </div>
+        <form class="w-search" id="form-search">
+          <i class="fa-solid fa-location-dot"></i>
+          <input
+            type="text"
+            placeholder="Enter Country"
+            class="w-search-input"
+            pattern="[A-Za-z0-9].{1,}"
+          />
+          <button
+            type="submit"
+            class="fa-solid fa-magnifying-glass w-search-btn"
+          ></button>
+        </form>
+
+        <div class="w-details">
+          <p id="clock"><i class="fa-solid fa-clock"></i><span></span></p>
+          <div class="w-title">
+            <h3></h3>
+            <h5></h5>
+          </div>
+          <div class="flex">
+            <div>
+              <p class="w-humid">
+                <i class="fa-solid fa-droplet"></i><span></span>
+              </p>
+              <p class="w-cloud">
+                <i class="fa-solid fa-cloud"></i><span></span>
+              </p>
+            </div>
+            <div>
+              <p class="w-sunrise">
+                <i class="fa-regular fa-sun"></i><span></span>
+              </p>
+              <p class="w-sunset">
+                <i class="fa-solid fa-sun"></i><span></span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment-with-locales.min.js"
+      integrity="sha512-42PE0rd+wZ2hNXftlM78BSehIGzezNeQuzihiBCvUEB3CVxHvsShF86wBWwQORNxNINlBPuq7rG4WWhNiTVHFg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/7c8801c017.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"
+      integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.5/purify.min.js"
+      integrity="sha512-KqUc2WMPF/gxte9xVjVE4TIt1LMUTidO3BrcItFg0Ro24I7pGNzgcXdnWdezNY+8T0/JEmdC79MuwYn+8UdOqw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="scripts.js" type="module"></script>
+  </body>
+</html>

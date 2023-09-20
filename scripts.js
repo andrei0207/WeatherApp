@@ -23,7 +23,7 @@ const sunset = document.querySelector(".w-details .w-sunset span");
 
 const sanitize = function (str) {
   return str.trim().replace(/[^\w\s]/gi, "");
-};
+}; 
 
 async function getLatLong() {
   const input = sanitize(weatherInput.value) || "New York";
@@ -44,7 +44,7 @@ async function getLatLong() {
     console.log(err);
     return;
   }
-}
+} 
 
 async function getWeather(e) {
   if (e) {
